@@ -31,10 +31,10 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" data-scroll-behavior="smooth">
             <body className={`${sora.variable} ${space_grotesk.variable} antialiased min-h-screen flex flex-col`}>
                 <Header />
-                <main className="grow">{children}</main>
+                <main className="grow px-page-x py-page-y">{children}</main>
                 <Footer />
             </body>
         </html>

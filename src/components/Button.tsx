@@ -28,7 +28,7 @@ export default function Button({
 
     const renderButton = () => {
         return (
-            <button id={id} className={classes}>
+            <button id={id} className={classes} onClick={onClick} disabled={disabled} type={buttonType ? buttonType : "button"}>
                 {children}
             </button>
         );
@@ -36,7 +36,7 @@ export default function Button({
 
     const renderLink = () => {
         return (
-            <Link href={href!} className={classes}>
+            <Link href={href!} className={classes} onClick={onClick}>
                 {children}
             </Link>
         )
