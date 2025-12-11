@@ -1,7 +1,7 @@
 interface SectionProps {
     title?: string,
     className?: string,
-    children: React.ReactNode,
+    children: React.ReactNode
 }
 
 export default function Section({
@@ -9,7 +9,7 @@ export default function Section({
     className,
     children
 } : SectionProps) {
-    const classes = `px-8 py-10 ${className}`;
+    const classes = `px-8 py-10 ${className ? className : ""}`;
 
     return (
         <section className={classes}>
