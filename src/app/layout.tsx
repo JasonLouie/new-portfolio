@@ -34,7 +34,7 @@ export default function RootLayout({
         <html lang="en" data-scroll-behavior="smooth">
             <body className={`${sora.variable} ${space_grotesk.variable} antialiased min-h-screen flex flex-col`}>
                 <Header />
-                <main className="grow px-page-x py-page-y">{children}</main>
+                <main className="grow">{children}</main>
                 <Footer />
             </body>
         </html>

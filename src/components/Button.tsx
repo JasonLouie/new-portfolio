@@ -24,7 +24,7 @@ export default function Button({
     disabled,
     hoverEffect
 } : ButtonProps) {
-    const classes = `${className} ${disabled ? "cursor-not-allowed" : "cursor-pointer"}`;
+    const classes = `${className} ${disabled ? "hover:cursor-not-allowed" : "hover:cursor-pointer"}`;
 
     const renderButton = () => {
         return (
